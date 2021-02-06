@@ -11,6 +11,7 @@ import (
 	qrcode "github.com/skip2/go-qrcode"
 )
 
+//TODO: make it work on https
 var addr = flag.String("addr", ":1718", "http service address") // Q=17, R=18
 
 var templ = template.Must(template.New("qr").Parse(templateStr))
